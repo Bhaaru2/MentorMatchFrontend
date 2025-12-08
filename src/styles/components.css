@@ -1,0 +1,133 @@
+/* General Card Styles for Dashboards */
+.card {
+  border-radius: 20px;
+  padding: 25px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(145deg, #ffffff, #e6f0ff);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Mentor Card */
+.mentor-card {
+  composes: card;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  padding: 40px;
+  margin: 0px 40px;
+  border-radius: 20px;
+}
+
+.mentor-card h3 {
+  margin-bottom: 8px;
+  color: #1a202c;
+  font-size: 1.3rem;
+}
+
+.mentor-card p {
+  font-size: 0.95rem;
+  color: #4a5568;
+  margin-bottom: 10px;
+}
+
+.mentor-card button {
+  margin-top: 10px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mentor-card button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #5a74e3, #7a4fe3);
+}
+
+/* Request Card */
+.request-card {
+  composes: card;
+  background: linear-gradient(145deg, #fff0f5, #ffe6f7);
+  text-align: left;
+  padding: 25px;
+  margin: 50px;
+  border-radius: 20px;
+}
+
+.request-card h4 {
+  margin-bottom: 12px;
+  color: #1a202c;
+  font-size: 1.2rem;
+}
+
+.request-card p {
+  font-size: 0.95rem;
+  color: #4a5568;
+  margin-bottom: 8px;
+}
+
+/* Request Buttons */
+.request-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.request-buttons button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.request-buttons button:first-child {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+.request-buttons button:first-child:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #38f9d7, #2bc1b1);
+}
+
+.request-buttons button:last-child {
+  background: linear-gradient(135deg, #f85032, #e73827);
+}
+
+.request-buttons button:last-child:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #e73827, #c5301e);
+}
+
+/* Layout Helpers */
+.mentor-list,
+.requests-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.dashboard-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #1a202c;
+}
